@@ -1,0 +1,21 @@
+
+h1{
+    /* centers the header */
+    display: flex;
+    justify-content: center;
+}
+
+.missionMeta{
+   /* border: 5px solid black; */
+   width: 500px;
+}
+/* body{
+    /* display: flex; */
+    /* text-align: center;
+/* } */ 
+.boxed{
+    /* border: 5px solid black; */
+    display: flex;
+    /* width: 500px; */
+    justify-content: center;
+}
