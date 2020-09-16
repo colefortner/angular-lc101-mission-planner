@@ -19,8 +19,14 @@ export class CrewComponent implements OnInit {
   ngOnInit() {
   }
   add(memberName: string, isFirst: boolean){
-    this.crew.push({name: memberName, firstMission: isFirst});
+    for(let i = 0; this.crew.length; i++){
+      if(this.crew[i]['name'] === memberName){
+        alert('you cannot have duplicate names')
+    } else {
+      this.crew.push({name: memberName, firstMission: isFirst});
+    }
   }
+}
   edit(member: object){
     this.memberBeingEdited = member;
   }
